@@ -42,24 +42,27 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
   <!-- Fonts END -->
 
   <!-- Global styles START -->          
-  <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  @vite(['resources/css/font-awesome/font-awesome.min.css'])
+  @vite(['resources/css/bootstrap/bootstrap.min.css'])
+  
   <!-- Global styles END --> 
    
   <!-- Page level plugin styles START -->
-  <link href="assets/pages/css/animate.css" rel="stylesheet">
-  <link href="assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
-  <link href="assets/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+  @vite(['resources/css/animate.css'])
+  @vite(['resources/css/fancybox/jquery.fancybox.css'])
+  @vite(['resources/css/owl.carousel/owl.carousel.css"'])
+
   <!-- Page level plugin styles END -->
 
   <!-- Theme styles START -->
-  <link href="assets/pages/css/components.css" rel="stylesheet">
-  <link href="assets/pages/css/slider.css" rel="stylesheet">
-  <link href="assets/pages/css/style-shop.css" rel="stylesheet" type="text/css">
-  <link href="assets/corporate/css/style.css" rel="stylesheet">
-  <link href="assets/corporate/css/style-responsive.css" rel="stylesheet">
-  <link href="assets/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
-  <link href="assets/corporate/css/custom.css" rel="stylesheet">
+  @vite(['resources/css/components.css'])
+  @vite(['resources/css/style.css'])
+  @vite(['resources/css/style-shop.css'])
+  @vite(['resources/css/style-responsive.css'])
+  @vite(['resources/css/themes/red.css'])
+  @vite(['resources/css/custom.css'])
+  @vite(['resources/css/slider.css'])
+ 
   <!-- Theme styles END -->
 </head>
 <!-- Head END -->
@@ -130,7 +133,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     <!-- BEGIN HEADER -->
     <div class="header">
       <div class="container">
-        <a class="site-logo" href="shop-index.html"><img src="assets/corporate/img/logos/logo-shop-red.png" alt="Metronic Shop UI"></a>
+        <a class="site-logo" href="shop-index.html"><img src="{{asset('images/logos/logo-shop-red.png')}}" alt="Metronic Shop UI"></a>
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
@@ -146,56 +149,56 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
             <div class="top-cart-content">
               <ul class="scroller" style="height: 250px;">
                 <li>
-                  <a href="shop-item.html"><img src="assets/pages/img/cart-img.jpg" alt="Rolex Classic Watch" width="37" height="34"></a>
+                  <a href="shop-item.html"><img src="{{asset('/images/cart-img.jpg')}}" alt="Rolex Classic Watch" width="37" height="34"></a>
                   <span class="cart-content-count">x 1</span>
                   <strong><a href="shop-item.html">Rolex Classic Watch</a></strong>
                   <em>$1230</em>
                   <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
                 </li>
                 <li>
-                  <a href="shop-item.html"><img src="assets/pages/img/cart-img.jpg" alt="Rolex Classic Watch" width="37" height="34"></a>
+                  <a href="shop-item.html"><img src="{{asset('/images/cart-img.jpg')}}" alt="Rolex Classic Watch" width="37" height="34"></a>
                   <span class="cart-content-count">x 1</span>
                   <strong><a href="shop-item.html">Rolex Classic Watch</a></strong>
                   <em>$1230</em>
                   <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
                 </li>
                 <li>
-                  <a href="shop-item.html"><img src="assets/pages/img/cart-img.jpg" alt="Rolex Classic Watch" width="37" height="34"></a>
+                  <a href="shop-item.html"><img src="{{asset('/images/cart-img.jpg')}}" alt="Rolex Classic Watch" width="37" height="34"></a>
                   <span class="cart-content-count">x 1</span>
                   <strong><a href="shop-item.html">Rolex Classic Watch</a></strong>
                   <em>$1230</em>
                   <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
                 </li>
                 <li>
-                  <a href="shop-item.html"><img src="assets/pages/img/cart-img.jpg" alt="Rolex Classic Watch" width="37" height="34"></a>
+                  <a href="shop-item.html"><img src="{{asset('/images/cart-img.jpg')}}" alt="Rolex Classic Watch" width="37" height="34"></a>
                   <span class="cart-content-count">x 1</span>
                   <strong><a href="shop-item.html">Rolex Classic Watch</a></strong>
                   <em>$1230</em>
                   <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
                 </li>
                 <li>
-                  <a href="shop-item.html"><img src="assets/pages/img/cart-img.jpg" alt="Rolex Classic Watch" width="37" height="34"></a>
+                  <a href="shop-item.html"><img src="{{asset('/images/cart-img.jpg')}}" alt="Rolex Classic Watch" width="37" height="34"></a>
                   <span class="cart-content-count">x 1</span>
                   <strong><a href="shop-item.html">Rolex Classic Watch</a></strong>
                   <em>$1230</em>
                   <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
                 </li>
                 <li>
-                  <a href="shop-item.html"><img src="assets/pages/img/cart-img.jpg" alt="Rolex Classic Watch" width="37" height="34"></a>
+                  <a href="shop-item.html"><img src="{{asset('/images/cart-img.jpg')}}" alt="Rolex Classic Watch" width="37" height="34"></a>
                   <span class="cart-content-count">x 1</span>
                   <strong><a href="shop-item.html">Rolex Classic Watch</a></strong>
                   <em>$1230</em>
                   <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
                 </li>
                 <li>
-                  <a href="shop-item.html"><img src="assets/pages/img/cart-img.jpg" alt="Rolex Classic Watch" width="37" height="34"></a>
+                  <a href="shop-item.html"><img src="{{asset('/images/cart-img.jpg')}}" alt="Rolex Classic Watch" width="37" height="34"></a>
                   <span class="cart-content-count">x 1</span>
                   <strong><a href="shop-item.html">Rolex Classic Watch</a></strong>
                   <em>$1230</em>
                   <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
                 </li>
                 <li>
-                  <a href="shop-item.html"><img src="assets/pages/img/cart-img.jpg" alt="Rolex Classic Watch" width="37" height="34"></a>
+                  <a href="shop-item.html"><img src="{{asset('/images/cart-img.jpg')}}" alt="Rolex Classic Watch" width="37" height="34"></a>
                   <span class="cart-content-count">x 1</span>
                   <strong><a href="shop-item.html">Rolex Classic Watch</a></strong>
                   <em>$1230</em>
@@ -296,11 +299,11 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                       </div>
                       <div class="col-md-12 nav-brands">
                         <ul>
-                          <li><a href="shop-product-list.html"><img title="esprit" alt="esprit" src="assets/pages/img/brands/esprit.jpg"></a></li>
-                          <li><a href="shop-product-list.html"><img title="gap" alt="gap" src="assets/pages/img/brands/gap.jpg"></a></li>
-                          <li><a href="shop-product-list.html"><img title="next" alt="next" src="assets/pages/img/brands/next.jpg"></a></li>
-                          <li><a href="shop-product-list.html"><img title="puma" alt="puma" src="assets/pages/img/brands/puma.jpg"></a></li>
-                          <li><a href="shop-product-list.html"><img title="zara" alt="zara" src="assets/pages/img/brands/zara.jpg"></a></li>
+                        <li><a href="shop-product-list.html"><img title="esprit" alt="esprit" src="{{asset('images/brands/esprit.jpg')}}"></a></li>
+                          <li><a href="shop-product-list.html"><img title="gap" alt="gap" src="{{asset('images/brands/gap.jpg')}}"></a></li>
+                          <li><a href="shop-product-list.html"><img title="next" alt="next" src="{{asset('images/brands/next.jpg')}}"></a></li>
+                          <li><a href="shop-product-list.html"><img title="puma" alt="puma" src="{{asset('images/brands/puma.jpg')}}"></a></li>
+                          <li><a href="shop-product-list.html"><img title="zara" alt="zara" src="{{asset('images/brands/zara.jpg')}}"></a></li>
                         </ul>
                       </div>
                     </div>
@@ -321,7 +324,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.html"><img src="assets/pages/img/products/model4.jpg" class="img-responsive" alt="Berry Lace Dress"></a>
+                            <a href="shop-item.html"><img src="{{asset('images/products/model4.jpg')}}" class="img-responsive" alt="Berry Lace Dress"></a>
                           </div>
                           <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
                           <div class="pi-price">$29.00</div>
@@ -331,7 +334,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.html"><img src="assets/pages/img/products/model3.jpg" class="img-responsive" alt="Berry Lace Dress"></a>
+                            <a href="shop-item.html"><img src="{{asset('images/products/model3.jpg')}}" class="img-responsive" alt="Berry Lace Dress"></a>
                           </div>
                           <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
                           <div class="pi-price">$29.00</div>
@@ -341,7 +344,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.html"><img src="assets/pages/img/products/model7.jpg" class="img-responsive" alt="Berry Lace Dress"></a>
+                          <a href="shop-item.html"><img src="{{asset('images/products/model7.jpg')}}" class="img-responsive" alt="Berry Lace Dress"></a>
                           </div>
                           <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
                           <div class="pi-price">$29.00</div>
@@ -351,7 +354,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.html"><img src="assets/pages/img/products/model4.jpg" class="img-responsive" alt="Berry Lace Dress"></a>
+                            <a href="shop-item.html"><img src="{{asset('images/products/model4.jpg')}}" class="img-responsive" alt="Berry Lace Dress"></a>
                           </div>
                           <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
                           <div class="pi-price">$29.00</div>
@@ -458,7 +461,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                             </p>
                             <a class="carousel-btn" href="#" data-animation="animated fadeInUp">See More Details</a>
                         </div>
-                        <img class="carousel-position-five animate-delay hidden-sm hidden-xs" src="assets/pages/img/shop-slider/slide2/price.png" alt="Price" data-animation="animated zoomIn">
+                        <img class="carousel-position-five animate-delay hidden-sm hidden-xs" src="{{asset('images/shop-slider/slide2/price.png')}}" alt="Price" data-animation="animated zoomIn">
                     </div>
                 </div>
 
@@ -517,9 +520,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/model1.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/model1.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/model1.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/model7.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -532,9 +535,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/model2.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/model2.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/model2.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/model2.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -546,9 +549,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/model6.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/model6.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/model6.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/model6.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -560,9 +563,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                   <div class="product-item">
                     <div class="pi-img-wrapper">
-                      <img src="assets/pages/img/products/model4.jpg" class="img-responsive" alt="Berry Lace Dress">
+                      <img src="{{asset('images/products/model4.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                       <div>
-                        <a href="assets/pages/img/products/model4.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                        <a href="{{asset('images/products/model4.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                         <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                       </div>
                     </div>
@@ -575,9 +578,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/model5.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/model5.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/model5.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/model5.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -589,9 +592,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/model3.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/model3.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/model3.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/model3.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -603,9 +606,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/model7.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/model7.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/model7.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/model7.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -675,9 +678,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/k1.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/k1.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/k1.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/k1.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -690,9 +693,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/k2.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/k2.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/k2.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/k2.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -704,9 +707,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/k3.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/k3.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/k3.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/k3.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -718,9 +721,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/k4.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/k4.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/k4.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/k4.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -733,9 +736,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/k1.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/k1.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/k1.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/k1.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -747,9 +750,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/k2.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/k2.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/k2.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/k2.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -773,9 +776,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/k4.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/k4.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/k4.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/k4.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -787,9 +790,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/k2.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/k2.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/k2.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/k2.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -801,9 +804,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/k3.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/k3.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/k3.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/k3.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -815,9 +818,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/k1.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/k1.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/k1.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/k1.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -829,9 +832,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/k4.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/k4.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/k4.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/k4.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -843,9 +846,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/k3.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/products/k3.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                     <div>
-                      <a href="assets/pages/img/products/k3.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{asset('images/products/k3.jpg')}}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -869,13 +872,13 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                 </ol>
                 <div class="carousel-inner">
                   <div class="item active">
-                    <img src="assets/pages/img/index-sliders/slide1.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/index-sliders/slide1.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                   </div>
                   <div class="item">
-                    <img src="assets/pages/img/index-sliders/slide2.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/index-sliders/slide2.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                   </div>
                   <div class="item">
-                    <img src="assets/pages/img/index-sliders/slide3.jpg" class="img-responsive" alt="Berry Lace Dress">
+                    <img src="{{asset('images/index-sliders/slide3.jpg')}}" class="img-responsive" alt="Berry Lace Dress">
                   </div>
                 </div>
               </div>
@@ -891,18 +894,18 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     <div class="brands">
       <div class="container">
             <div class="owl-carousel owl-carousel6-brands">
-              <a href="shop-product-list.html"><img src="assets/pages/img/brands/canon.jpg" alt="canon" title="canon"></a>
-              <a href="shop-product-list.html"><img src="assets/pages/img/brands/esprit.jpg" alt="esprit" title="esprit"></a>
-              <a href="shop-product-list.html"><img src="assets/pages/img/brands/gap.jpg" alt="gap" title="gap"></a>
-              <a href="shop-product-list.html"><img src="assets/pages/img/brands/next.jpg" alt="next" title="next"></a>
-              <a href="shop-product-list.html"><img src="assets/pages/img/brands/puma.jpg" alt="puma" title="puma"></a>
-              <a href="shop-product-list.html"><img src="assets/pages/img/brands/zara.jpg" alt="zara" title="zara"></a>
-              <a href="shop-product-list.html"><img src="assets/pages/img/brands/canon.jpg" alt="canon" title="canon"></a>
-              <a href="shop-product-list.html"><img src="assets/pages/img/brands/esprit.jpg" alt="esprit" title="esprit"></a>
-              <a href="shop-product-list.html"><img src="assets/pages/img/brands/gap.jpg" alt="gap" title="gap"></a>
-              <a href="shop-product-list.html"><img src="assets/pages/img/brands/next.jpg" alt="next" title="next"></a>
-              <a href="shop-product-list.html"><img src="assets/pages/img/brands/puma.jpg" alt="puma" title="puma"></a>
-              <a href="shop-product-list.html"><img src="assets/pages/img/brands/zara.jpg" alt="zara" title="zara"></a>
+              <a href="shop-product-list.html"><img src="{{asset('images/brands/canon.jpg')}}" alt="canon" title="canon"></a>
+              <a href="shop-product-list.html"><img src="{{asset('images/brands/esprit.jpg')}}" alt="esprit" title="esprit"></a>
+              <a href="shop-product-list.html"><img src="{{asset('images/brands/gap.jpg')}}" alt="gap" title="gap"></a>
+              <a href="shop-product-list.html"><img src="{{asset('images/brands/next.jpg')}}" alt="next" title="next"></a>
+              <a href="shop-product-list.html"><img src="{{asset('images/brands/puma.jpg')}}" alt="puma" title="puma"></a>
+              <a href="shop-product-list.html"><img src="{{asset('images/brands/zara.jpg')}}" alt="zara" title="zara"></a>
+              <a href="shop-product-list.html"><img src="{{asset('images/brands/canon.jpg')}}" alt="canon" title="canon"></a>
+              <a href="shop-product-list.html"><img src="{{asset('images/brands/esprit.jpg')}}" alt="esprit" title="esprit"></a>
+              <a href="shop-product-list.html"><img src="{{asset('images/brands/gap.jpg')}}" alt="gap" title="gap"></a>
+              <a href="shop-product-list.html"><img src="{{asset('images/brands/next.jpg')}}" alt="next" title="next"></a>
+              <a href="shop-product-list.html"><img src="{{asset('images/brands/puma.jpg')}}" alt="puma" title="puma"></a>
+              <a href="shop-product-list.html"><img src="{{asset('images/brands/zara.jpg')}}" alt="zara" title="zara"></a>
             </div>
         </div>
     </div>
@@ -1035,11 +1038,11 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
           <!-- BEGIN PAYMENTS -->
           <div class="col-md-4 col-sm-4">
             <ul class="list-unstyled list-inline pull-right">
-              <li><img src="assets/corporate/img/payments/western-union.jpg" alt="We accept Western Union" title="We accept Western Union"></li>
-              <li><img src="assets/corporate/img/payments/american-express.jpg" alt="We accept American Express" title="We accept American Express"></li>
-              <li><img src="assets/corporate/img/payments/MasterCard.jpg" alt="We accept MasterCard" title="We accept MasterCard"></li>
-              <li><img src="assets/corporate/img/payments/PayPal.jpg" alt="We accept PayPal" title="We accept PayPal"></li>
-              <li><img src="assets/corporate/img/payments/visa.jpg" alt="We accept Visa" title="We accept Visa"></li>
+              <li><img src="{{asset('images/payments/western-union.jpg')}}" alt="We accept Western Union" title="We accept Western Union"></li>
+              <li><img src="{{asset('images/payments/american-express.jpg')}}" alt="We accept American Express" title="We accept American Express"></li>
+              <li><img src="{{asset('images/payments/MasterCard.jpg')}}" alt="We accept MasterCard" title="We accept MasterCard"></li>
+              <li><img src="{{asset('images/payments/PayPal.jpg')}}" alt="We accept PayPal" title="We accept PayPal"></li>
+              <li><img src="{{asset('images/payments/visa.jpg')}}" alt="We accept Visa" title="We accept Visa"></li>
             </ul>
           </div>
           <!-- END PAYMENTS -->
@@ -1059,12 +1062,12 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-3">
                   <div class="product-main-image">
-                    <img src="assets/pages/img/products/model7.jpg" alt="Cool green dress with red bell" class="img-responsive">
+                    <img src="{{asset('images/products/model7.jpg')}}" alt="Cool green dress with red bell" class="img-responsive">
                   </div>
                   <div class="product-other-images">
-                    <a href="javascript:;" class="active"><img alt="Berry Lace Dress" src="assets/pages/img/products/model3.jpg"></a>
-                    <a href="javascript:;"><img alt="Berry Lace Dress" src="assets/pages/img/products/model4.jpg"></a>
-                    <a href="javascript:;"><img alt="Berry Lace Dress" src="assets/pages/img/products/model5.jpg"></a>
+                    <a href="javascript:;" class="active"><img alt="Berry Lace Dress" src="{{asset('images/products/model3.jpg')}}"></a>
+                    <a href="javascript:;"><img alt="Berry Lace Dress" src="{{asset('images/products/model4.jpg')}}"></a>
+                    <a href="javascript:;"><img alt="Berry Lace Dress" src="{{asset('images/products/model5.jpg')}}"></a>
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-9">
@@ -1119,21 +1122,24 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     <!--[if lt IE 9]>
     <script src="assets/plugins/respond.min.js"></script>  
     <![endif]-->
-    <script src="assets/plugins/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
-    <script src="assets/corporate/scripts/back-to-top.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/layout.js') }}"></script>
+    <script src="{{ asset('js/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-migrate.min.js') }}"></script>
+    <script src="{{ asset('js/back-to-top.js') }}"></script>
+    <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
+ 
     <!-- END CORE PLUGINS -->
 
     <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
-    <script src="assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
-    <script src="assets/plugins/owl.carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
-    <script src='assets/plugins/zoom/jquery.zoom.min.js' type="text/javascript"></script><!-- product zoom -->
-    <script src="assets/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script><!-- Quantity -->
 
-    <script src="assets/corporate/scripts/layout.js" type="text/javascript"></script>
-    <script src="assets/pages/scripts/bs-carousel.js" type="text/javascript"></script>
+    <script src="{{ asset('js/fancybox/jquery.fancybox.pack.js') }}"></script>
+    <script src="{{ asset('js/owl.carousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('js/zoom/jquery.zoom.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap/bootstrap.touchspin.js') }}"></script>
+    <script src="{{ asset('js/uniform/jquery.uniform.min.js') }}"></script>
+    <script src="{{ asset('js/bs-carousel.js')}}"></script>
+    <script src="{{ asset('js/rateit/jquery.rateit.js')}}"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
             Layout.init();    

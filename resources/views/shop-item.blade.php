@@ -1017,21 +1017,22 @@ Nostrud duis molestie at dolore.</p>
     <!--[if lt IE 9]>
     <script src="assets/plugins/respond.min.js"></script>  
     <![endif]-->  
-    @vite(['resources/js/jquery.min.js'])
-    @vite(['resources/js/jquery-migrate.min.js'])
-    @vite(['resources/js/bootstrap/bootstrap.min.js'])
-    @vite(['resources/js/back-to-top.js'])
-    @vite(['resources/js/jquery-slimscroll/jquery.slimscroll.min.js'])
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/layout.js') }}"></script>
+    <script src="{{ asset('js/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-migrate.min.js') }}"></script>
+    <script src="{{ asset('js/back-to-top.js') }}"></script>
+
+    
     <!-- END CORE PLUGINS -->
 
     <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
-    @vite(['resources/js/fancybox/jquery.fancybox.pack.js'])
-    @vite(['resources/js/owl.carousel/owl.carousel.min.js'])
-    @vite(['resources/js/zoom/jquery.zoom.min.js'])
-    @vite(['resources/js/bootstrap/bootstrap.touchspin.js'])
-    @vite(['resources/js/uniform/jquery.uniform.min.js'])
-    @vite(['resources/js/layout.js'])
-    @vite(['resources/js/rateit/rateit.js])
+    <script src="{{ asset('js/fancybox/jquery.fancybox.pack.js') }}"></script>
+    <script src="{{ asset('js/owl.carousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('js/zoom/jquery.zoom.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap/bootstrap.touchspin.js') }}"></script>
+    <script src="{{ asset('js/uniform/jquery.uniform.min.js') }}"></script>
+    <script src="{{ asset('js/rateit/rateit.js') }}"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
             Layout.init();    

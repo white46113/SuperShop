@@ -10,7 +10,6 @@ import axios from 'axios';
 // let name = null;
 // let changed = name?.toUpperCase();
 // console.log(changed);
-
 document.getElementById("ajaxForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
