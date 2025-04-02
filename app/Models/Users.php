@@ -60,15 +60,14 @@ class Users extends Authenticatable
         //     dd('no table');
         // }
 
-        Schema::create('books',function($table){
-            $table->increments('id');
-            $table->string('title');
-            $table->integer('page_count');
-            $table->decimal('price',15,2);
-            $table->timestamps();
-        });
-
-        // $data = DB::table('users')->select('*')->get();     
-        return true;
+        // Schema::create('books',function($table){
+        //     $table->increments('id');
+        //     $table->string('title');
+        //     $table->integer('page_count');
+        //     $table->decimal('price',15,2);
+        //     $table->timestamps();
+        // });
+        $data = json_decode(json_encode(DB::table('products')->select('*')->get()), true);
+        return $data;
     }
 }

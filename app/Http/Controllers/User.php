@@ -12,7 +12,11 @@ class User extends Controller
     public function login(){
         // return view('shop-item');
     // return view('shop-checkout');
-    return view('shop-product-list');
+    $new_obj = new Users;
+    $data = $new_obj->getData();
+    $ret_data['data'] = $data;
+    return view('shop-product-list',$ret_data);
+
     }
     public function save(Request $request){
         $data = $request->all();
