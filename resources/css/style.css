@@ -1106,7 +1106,7 @@ steps block and steps block elements
 	margin: -23px 0 23px;
 	position: relative;
 	overflow: hidden;
-	background: #72c2ff url(../../pages/img/title-bg/man.jpg) no-repeat 100% 100%;
+	background: #72c2ff url(../images/man.jpg) no-repeat 100% 100%;
 	min-height: 280px;
 	padding-top: 79px;
 	width: 100%;
@@ -2982,14 +2982,14 @@ Styler Panel
   margin: 0;
 }
 .color-panel .icon-color {
-  background: #c9c9c9 url(../../pages/img/icon-color.png) center no-repeat;
+  background: #c9c9c9 url(../images/icon-color.png) center no-repeat;
 }
 .color-panel .icon-color:hover {
   background-color: #3d3d3d;
 }
 .color-panel .icon-color-close {
   display: none;
-  background: #3d3d3d url(../../pages/img/icon-color-close.png) center no-repeat;
+  background: #3d3d3d url(../images/icon-color-close.png) center no-repeat;
 }
 .color-panel .icon-color-close:hover {
   background-color: #222;

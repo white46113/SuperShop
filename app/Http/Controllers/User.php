@@ -12,7 +12,7 @@ class User extends Controller
     public function login(){
         // return view('shop-item');
     // return view('shop-checkout');
-    return view('shop-index');
+    return view('shop-product-list');
     }
     public function save(Request $request){
         $data = $request->all();

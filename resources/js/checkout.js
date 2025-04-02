@@ -1,7 +1,7 @@
 var Checkout = function () {
     return {
         init: function () {
-            alert();
+            
             $('#checkout').on('change', '#checkout-content input[name="account"]', function() {
 
               var title = '';
