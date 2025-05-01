@@ -87,7 +87,8 @@ return [
     /*
     |--------------------------------------------------------------------------
     | Encryption Key
-    |--------------------------------------------------------------------------
+    |--------------------------------------------------------------
+    ------------
     |
     | This key is utilized by Laravel's encryption services and should be set
     | to a random, 32 character string to ensure that all encrypted values
@@ -123,4 +124,7 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'aliases' => [
+    'Item' => App\Facades\ItemFacade::class,
+],
 ];

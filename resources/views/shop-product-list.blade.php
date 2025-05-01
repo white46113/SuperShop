@@ -62,7 +62,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
   @vite(['resources/css/style-responsive.css'])
   @vite(['resources/css/themes/red.css'])
   @vite(['resources/css/custom.css'])
-
+  @vite(['resources/css/app.css'])
 
   <!-- Theme styles END -->
 </head>
@@ -222,20 +222,23 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               </div>
             </div>
             <!-- BEGIN PRODUCT LIST -->
+           
             @foreach($data as $key => $val)
+            <!-- <div class="row product-list"> -->
+            
             @php $cur_image = $val['image']; @endphp
-
               <!-- PRODUCT ITEM START -->
+              
               <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                  <img src="{{ asset('images/products/' . $cur_image) }}" class="img-responsive" alt="Berry Lace Dress" style="height: 143px;">
+                  <img src="{{ asset('images/products/' . $cur_image) }}" class="img-responsive" alt="Berry Lace Dress" >
                     <div>
                       <a href="{{ asset('images/products/' . $cur_image) }}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">{{$val['name']}}</a></h3>
+                  <h3><a href="{{route('dynamic.pages',['slug' => 'shop-item','id' => $val['id']])}}">{{$val['name']}}</a></h3>
                   <div class="pi-price">$ {{$val['price']}}</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -244,7 +247,10 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <!-- PRODUCT ITEM START -->
                         
               <!-- PRODUCT ITEM END -->
-           
+     
+          <!-- </div> -->
+         
+
            @endforeach
             <!-- END PRODUCT LIST -->
             <!-- BEGIN PAGINATOR -->

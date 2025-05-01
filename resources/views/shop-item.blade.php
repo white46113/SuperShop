@@ -153,31 +153,6 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                   <em>$1230</em>
                   <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
                 </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 
                 <li>
                   <a href="shop-item.html"><img src="{{asset('images/cart-img.jpg')}}" alt="Rolex Classic Watch" width="37" height="34"></a>
